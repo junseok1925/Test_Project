@@ -1,0 +1,15 @@
+.navbar{
+  background: skyblue;
+}
+
+.img{
+margin-right: 30px;
+}
+
+.nav-item li{
+  text-align: center;
+}
+
+.nav-link:hover{
+  color: pink;
+}

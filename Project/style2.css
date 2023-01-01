@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Silkscreen', cursive;
+}
+img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.cube{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  /* 돌아가는 시간 */
+  animation: animate 20s linear infinite; 
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100%
+  {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+.cube div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+/* 사각형 옆면 */
+.cube div span{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(47,0,122,48),rgba(255,0,255,100));
+  transform : rotateY(calc(90deg*var(--i)))translateZ(150px);
+  display: flex; 
+  /* 글씨 가로정렬 */
+  justify-content: center;
+  /* 가로 축을 기준으로 좌우에 대한 정렬을 관장 합니다. */
+  align-items: center;
+  /* 세로 축을 기준으로 정렬을 하게 됩니다 */
+  transform-style: preserve-3d;
+}
+ 
+/* 사각형 옆면 글씨 */
+.cube div span a{
+position: absolute;
+font-size: 70px;
+font-weight:bolder;
+color: rgb(32, 11, 52);
+transform: translateZ(50px);
+text-align: center;
+}
+
+.cube div span a:nth-child(1)
+{
+  transform: translateZ(0) translateY(20px);
+  color: rgba(0, 0, 0, 0.1);
+  filter: blur(1px);
+}
+
+.text:hover{
+  -webkit-text-stroke: 5px white;
+  cursor:pointer;
+}
+
+
+
+/* 사각형 윗면 */
+.top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: rgba(47,15,122,100);
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+/* 사각형 아래 그림자 */
+.top::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: rgba(255,50,255,100);
+  transform: translateZ(-400px);
+  filter: blur(50px);
+  box-shadow: 0 0 120px rgba(255,0,255,0.2),
+  0 0 120px rgba(255,0,255,0.4),
+  0 0 120px rgba(255,0,255,0.6),
+  0 0 120px rgba(255,0,255,0.8);
+}
+/* ============================================== */
+
+.cube2{
+  position: relative;
+  left: 200px;
+  top: -234px;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  /* 돌아가는 시간 */
+  animation: animate 20s linear infinite; 
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100%
+  {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+.cube2 div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+/* 사각형 옆면 */
+.cube2 div span{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(47,0,122,48),rgba(255,0,255,100));
+  transform : rotateY(calc(90deg*var(--i)))translateZ(150px);
+  display: flex; 
+  /* 글씨 가로정렬 */
+  justify-content: center;
+  /* 가로 축을 기준으로 좌우에 대한 정렬을 관장 합니다. */
+  align-items: center;
+  /* 세로 축을 기준으로 정렬을 하게 됩니다 */
+  transform-style: preserve-3d;
+}
+ 
+/* 사각형 옆면 글씨 */
+.cube2 div span a{
+position: absolute;
+font-size: 100px;
+font-weight:bolder;
+color: rgb(32, 11, 52);
+transform: translateZ(50px);
+}
+
+.cube2 div span a:nth-child(1)
+{
+  transform: translateZ(0) translateY(20px);
+  color: rgba(0, 0, 0, 0.1);
+  filter: blur(1px);
+}
+
+.clk:hover{
+  -webkit-text-stroke: 5px white;
+  cursor:pointer;
+}
+
+
+
+/* 사각형 윗면 */
+.top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: rgba(47,15,122,100);
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+/* 사각형 아래 그림자 */
+.top::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: rgba(255,50,255,100);
+  transform: translateZ(-400px);
+  filter: blur(50px);
+  box-shadow: 0 0 120px rgba(255,0,255,0.2),
+  0 0 120px rgba(255,0,255,0.4),
+  0 0 120px rgba(255,0,255,0.6),
+  0 0 120px rgba(255,0,255,0.8);
+}
