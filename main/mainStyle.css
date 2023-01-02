@@ -1,15 +1,29 @@
-.navbar{
-  background: skyblue;
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*{
+  font-family: 'Jua', sans-serif;
 }
 
-.img{
-margin-right: 30px;
+
+.header{
+  position: sticky;
+  top: 0px;
+  margin-top: 30px;
+  padding: 20px;
 }
 
-.nav-item li{
+
+.navbar-nav{
   text-align: center;
+  margin-left: 30px;
+  font-size: 30px;
 }
 
 .nav-link:hover{
   color: pink;
+}
+
+
+.card_Img {
+  height : 300px;
 }
