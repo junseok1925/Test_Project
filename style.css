@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 *{
   margin: 0;
   padding: 10px;
   box-sizing: border-box;
-  font-family: 'Silkscreen', cursive;
+  font-family: 'DungGeunMo';
+  text-decoration-line: none;
 }
 img {
   width: 100%;
@@ -12,17 +20,58 @@ img {
 }
 
 body{
+background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);;
+height: 100vh;
+}
+
+#welcome{
+  display : flex;
+  justify-content : center;
+}
+h1{
+  font-size: 100px;
+}
+
+/* 다크모드 버튼 */
+#btn {
+  box-sizing: border-box;
+  border-radius: 0.6em;
+  cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+#btn {
+  border-color: skyblue;
+  color: black;
+  box-shadow: 0 0 40px 40px #fbc2eb inset, 0 0 0 0 pink;
+  transition: all 150ms ease-in-out;
+}
+#btn:hover {
+  box-shadow: 0 0 10px 0 skyblue inset, 0 0 10px 4px skyblue;
+}
+
+/* cube */
+
+/* cube내 글자클릭시 */
+.clk:hover{
+  -webkit-text-stroke: 1px white;
+  cursor:pointer;
 }
 
 .cube{
-  position: relative;
-  left: 0;
-  top: 0;
+  position: absolute;
+  left:20%;
+  top: 40%;
   width: 300px;
   height: 300px;
   transform-style: preserve-3d;
@@ -34,7 +83,7 @@ body{
 {
   0%
   {
-    transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(-30deg) rotateY(0deg);
   }
   100%
   {
@@ -49,6 +98,7 @@ body{
   height: 100%;
   transform-style: preserve-3d;
 }
+
 /* 사각형 옆면 */
 .cube div span{
   position: absolute;
@@ -70,11 +120,11 @@ body{
 /* 사각형 옆면 글씨 */
 .cube div span a{
 position: absolute;
+text-align: center;
 font-size: 70px;
 font-weight:bolder;
 color: rgb(32, 11, 52);
 transform: translateZ(50px);
-text-align: center;
 }
 
 .cube div span a:nth-child(1)
@@ -83,12 +133,6 @@ text-align: center;
   color: rgba(0, 0, 0, 0.1);
   filter: blur(1px);
 }
-
-.text:hover{
-  -webkit-text-stroke: 5px white;
-  cursor:pointer;
-}
-
 
 
 /* 사각형 윗면 */
@@ -118,12 +162,13 @@ text-align: center;
   0 0 120px rgba(255,0,255,0.6),
   0 0 120px rgba(255,0,255,0.8);
 }
+
 /* ============================================== */
 
 .cube2{
-  position: relative;
-  left: 200px;
-  top: -234px;
+  position: absolute;
+  right:20%;
+  top: 40%;
   width: 300px;
   height: 300px;
   transform-style: preserve-3d;
@@ -171,7 +216,8 @@ text-align: center;
 /* 사각형 옆면 글씨 */
 .cube2 div span a{
 position: absolute;
-font-size: 100px;
+text-align: center;
+font-size: 70px;
 font-weight:bolder;
 color: rgb(32, 11, 52);
 transform: translateZ(50px);
@@ -183,13 +229,6 @@ transform: translateZ(50px);
   color: rgba(0, 0, 0, 0.1);
   filter: blur(1px);
 }
-
-.clk:hover{
-  -webkit-text-stroke: 5px white;
-  cursor:pointer;
-}
-
-
 
 /* 사각형 윗면 */
 .top{
