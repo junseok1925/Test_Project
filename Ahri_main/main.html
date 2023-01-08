@@ -4,76 +4,113 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 파비콘 -->
   <link rel="icon" href="../img/Logo.png"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="./mainStyle.css">
-  <title>졸귀탱 아리</title>
+  <link rel="stylesheet" href="mainStyle.css">
+  <title>hello</title>
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <h1 class="page-name" href="#">Ahri</h1>
+          <div class="navbar-nav navbar-nav-left">
+            <a class="nav-link" href="../Ahri_main/Fall_In.html"><ion-icon name="happy-outline"></ion-icon>햅삐</a>
+            <a class="nav-link" href="../Ahri_main/insta.html"><ion-icon name="logo-instagram"></ion-icon>instgram</a>
+            <a class="nav-link" href="#"><ion-icon name="image-outline"></ion-icon>photos</a>
+            <a class="nav-link" href="#"><ion-icon name="star-outline"></ion-icon>Daily</a>
+          </div>
+          </div> 
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="typing">
+    <h2 class="typing-text userID">방문해주셔서 감사합니다 (-'_'-)v</h2>
+  </div>
 
-  <!-- 네비바 -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid ">
+  <main>
+    <section>
+      <div class="scroll scroll-scaleUp">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/puppy3.JPG" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <span class="carousel-item-content">
+                  <h1>아리가 태어난지</h1>
+                  <h5 class="AhriAge"></h5>
+                  <!-- <h1>생일까지...</h1>
+                  <h5 class="AhriBirthday"></h5> -->
+                  <p>(태어난날 : 2013.02.03)</p>
+                </span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/puppy2.JPG" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <span class="carousel-item-content">
+                  <h5>동거견 "봉순이"와 한컷</h5>
+                  <p>2013.02.23</p>
+                </span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/puppy6.JPG" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <span class="carousel-item-content">
+                  <h5>완벽적응!! 침대 위에 올라오기 시작!!</h5>
+                  <p>2013.03.10 </p>
+                </span>  
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
       
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-        <a class="navbar-brand" href="#"> <img class="Logo-img" src="../img/Logo.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top"></a>
-        <div class="navbar-nav navbar-nav-left">
-          <a class="nav-link" href="./Fall_In.html"><ion-icon name="happy-outline"></ion-icon>햅삐</a>
-          <a class="nav-link" href="./insta.html"><ion-icon name="logo-instagram"></ion-icon>instgram</a>
-          <a class="nav-link" href="#"><ion-icon name="image-outline"></ion-icon>photos</a>
-          <a class="nav-link" href="#"><ion-icon name="star-outline"></ion-icon>Daily</a>
-        </div>
-        <!-- <div class="navbar-nav navbar-nav-right">
-          <a class="nav-link na-link-1" href="#"></a>
-          <a class="nav-link na-link-2" href="#"></a>
-        </div> -->
+      <div class="scroll scroll-right right-side">
+        <div class="Ahri">
+          <h1>지금은...</h1>
+          <a class="clock time"></a>
+          <h1>여기는...</h1>
+          <a class="name"></a>
+           <h1>날씨는...</h1>
+           <a class="main"></a>
+          <a class="temp"></a>      
+        </div>  
       </div>
-    </div>
-  </nav>
-
-    <!-- ===================================================캐러쉘=================================================== -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../img/Serious.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../img/Sleeping.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../img/in_car.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
+    <!-- <section>
+      <div class="scroll scroll-up">디비전 5</div>
+      <div class="scroll scroll-down">디비전 6</div>
+      <div class="scroll scroll-right">디비전 7</div>
+      <div class="scroll scroll-left">디비전 8</div>
+    </section>
+    <section>
+      <div class="scroll scroll-rotateL">디비전 9</div>
+      <div class="scroll scroll-rotateR">디비전 10</div>
+      <div class="scroll scroll-scaleUp">디비전 11</div>
+      <div class="scroll scroll-scaleDown">디비전 12</div>
+    </section> -->
+  </main>
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -86,5 +123,6 @@
 <!-- 아이콘이미지 불러오기 모듈 -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

@@ -1,21 +1,171 @@
-#load {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: block;
-  opacity: 0.8;
-  background: white;
-  z-index: 99;
-  text-align: center;
+* {
+  box-sizing: border-box; 
 }
 
-#load > img {
-  position: absolute;
-  width: 10%;
-  height: 10%;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
+body {
+  margin: 0px; 
 }
+
+header {
+  position: sticky;
+  top: 0px;
+  margin-top: 10x;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: beige, 0.5;
+}
+
+main {
+  padding-bottom: 100px;
+}
+
+
+.page-name{
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.scroll{
+  background-color: pink;
+}
+
+section .scroll {
+  width: 70%;
+  height: 70%;
+}
+
+/* ==================================캐러쉘===================================== */
+
+/* 캐러쉘안 내용글자 */
+.carousel-item-content{
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  font-weight: bolder;
+}
+
+.carousel-inner{
+  margin: auto;
+  width: 70%;
+  height: 100%;
+}
+
+/* 캐러셀 내부 박스들 크기 */
+.carousel-item{
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-next{
+  right: 15%;
+}
+
+.carousel-control-prev{
+  left: 15%;
+}
+/* =================================캐러쉘1옆 설명===================================== */
+
+.clock{
+  font-size: 1.5em;
+}
+
+.Ahri > a{
+  font-size: 1.5em;
+  text-decoration-line: none;
+  color: gray;
+  display: inline;
+}
+
+
+
+/* ====================================================================== */
+
+/* Scroll Animation (scroll, 스크롤 애니메이션) */
+.scroll {
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+/* 아래에서 위로 페이드 인 */
+.scroll-up {
+  transform: translate(0, 100px);
+  padding-left: 40px;
+}
+/* 위에서 아래로 페이드 인 */
+.scroll-down {
+  transform: translate(0, -100px);
+}
+/* 왼쪽에서 오른쪽으로 페이드 인 */
+.scroll-right {
+  transform: translate(-100px, 0);
+}
+/* 오른쪽에서 왼쪽으로 페이드 인 */
+.scroll-left {
+  transform: translate(100px, 0);
+}
+/* 왼쪽으로 회전하면서 페이드 인 */
+.scroll-rotateL {
+  transform: rotate(180deg);
+}
+/* 오른쪽으로 회전하면서 페이드 인 */
+.scroll-rotateR {
+  transform: rotate(-180deg);
+}
+/* 작아진 상태에서 커지면서 페이드 인 */
+.scroll-scaleUp {
+  transform: scale(.5);
+}
+/* 커진 상태에서 작아지면서 페이드 인 */
+.scroll-scaleDown {
+  transform: scale(1.5);
+}
+
+.scroll.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* ========================================================================== */
+
+.typingDiv{
+display: flex;
+justify-content: center;
+font-size: 1.5em;
+}
+
+.typing {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+.typing-text {
+  width: 27ch;
+  /* animation-delay: 10s; */
+  animation: typing 3s steps(22), blink .10s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'DungGeunMo';
+  font-size: 2em;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+/* ========================================================================== */
